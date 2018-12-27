@@ -1,0 +1,431 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* infodb_academia
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 11.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-12-27 15:59+0000\n"
+"PO-Revision-Date: 2018-12-27 17:07+0100\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"Language: es\n"
+"X-Generator: Poedit 2.0.6\n"
+
+#. module: infodb_academia
+#: model:ir.ui.view,arch_db:infodb_academia.session_kanban_view
+msgid ""
+"<br/>\n"
+"                                    Start date:"
+msgstr ""
+"<br/>\n"
+"                                    Fecha inicio:"
+
+#. module: infodb_academia
+#: model:ir.ui.view,arch_db:infodb_academia.session_kanban_view
+msgid ""
+"<br/>\n"
+"                                    duration:"
+msgstr ""
+"<br/>\n"
+"                                    Duración:"
+
+#. module: infodb_academia
+#: model:res.groups,name:infodb_academia.academy_group_manager
+msgid "Academy / Manager"
+msgstr "Academia / Gestor"
+
+#. module: infodb_academia
+#: model:ir.ui.menu,name:infodb_academia.menu_1
+msgid "Academy Menu"
+msgstr "Academia"
+
+#. module: infodb_academia
+#: model:ir.model.fields,field_description:infodb_academia.field_session_model_active
+msgid "Active"
+msgstr "Activo"
+
+#. module: infodb_academia
+#: model:ir.actions.act_window,name:infodb_academia.launch_session_wizard
+#: model:ir.ui.view,arch_db:infodb_academia.wizard_form_view
+msgid "Add Attendees"
+msgstr "Añadir asistentes"
+
+#. module: infodb_academia
+#: model:ir.ui.menu,name:infodb_academia.menu_launch_session_wizard
+msgid "Add Attendees massive"
+msgstr "Añadir asistentes masivamente"
+
+#. module: infodb_academia
+#: model:ir.model.fields,field_description:infodb_academia.field_res_partner_session_ids
+#: model:ir.model.fields,field_description:infodb_academia.field_res_users_session_ids
+msgid "Attended Session"
+msgstr "Sesión asistida"
+
+#. module: infodb_academia
+#: model:ir.model.fields,field_description:infodb_academia.field_session_model_attendee_ids
+msgid "Attendee"
+msgstr "Asistente"
+
+#. module: infodb_academia
+#: model:ir.model.fields,field_description:infodb_academia.field_session_model_attendee_count
+msgid "Attendee Count"
+msgstr "Nº Asistentes"
+
+#. module: infodb_academia
+#: model:ir.model.fields,field_description:infodb_academia.field_subscribe_wizard_attendee_ids
+msgid "Attendees"
+msgstr "Asistentes"
+
+#. module: infodb_academia
+#: model:ir.actions.act_window,name:infodb_academia.act_session_graph
+#: model:ir.ui.view,arch_db:infodb_academia.board_session_form
+msgid "Attendees by course"
+msgstr "Asistentes por curso"
+
+#. module: infodb_academia
+#: model:ir.ui.view,arch_db:infodb_academia.report_session_view
+msgid "Attendees:"
+msgstr "Asistentes:"
+
+#. module: infodb_academia
+#: model:ir.ui.view,arch_db:infodb_academia.wizard_form_view
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: infodb_academia
+#: model:ir.model.fields,field_description:infodb_academia.field_session_model_color
+msgid "Color"
+msgstr "Color"
+
+#. module: infodb_academia
+#: model:ir.ui.menu,name:infodb_academia.configuration_menu
+msgid "Configuration"
+msgstr "Configuración"
+
+#. module: infodb_academia
+#: model:ir.model,name:infodb_academia.model_res_partner
+msgid "Contact"
+msgstr "Contacto"
+
+#. module: infodb_academia
+#: model:ir.actions.act_window,name:infodb_academia.contact_list_action
+#: model:ir.ui.menu,name:infodb_academia.contact_menu
+msgid "Contacts"
+msgstr "Contactos"
+
+#. module: infodb_academia
+#: model:ir.model.fields,field_description:infodb_academia.field_session_model_course_id
+#: model:ir.ui.view,arch_db:infodb_academia.course_form_view
+msgid "Course"
+msgstr "Curso"
+
+#. module: infodb_academia
+#: model:ir.ui.view,arch_db:infodb_academia.course_form_view
+msgid "Course Form"
+msgstr "Curso"
+
+#. module: infodb_academia
+#: model:ir.model.fields,field_description:infodb_academia.field_course_model_name
+msgid "Course Name"
+msgstr "Nombre"
+
+#. module: infodb_academia
+#: model:ir.ui.view,arch_db:infodb_academia.course_search_view
+msgid "Course Search"
+msgstr "Curso"
+
+#. module: infodb_academia
+#: model:ir.ui.view,arch_db:infodb_academia.course_list_view
+msgid "Course Tree"
+msgstr "Curso"
+
+#. module: infodb_academia
+#: model:ir.actions.act_window,name:infodb_academia.act_course_list
+#: model:ir.actions.act_window,name:infodb_academia.course_list_action
+#: model:ir.ui.menu,name:infodb_academia.menu_2
+#: model:ir.ui.view,arch_db:infodb_academia.board_session_form
+msgid "Courses"
+msgstr "Courses"
+
+#. module: infodb_academia
+#: model:ir.actions.act_window,help:infodb_academia.session_list_action
+msgid "Create session"
+msgstr "Crear Sesión"
+
+#. module: infodb_academia
+#: model:ir.actions.act_window,help:infodb_academia.course_list_action
+msgid "Create the first course"
+msgstr "Crea tu primer curso"
+
+#. module: infodb_academia
+#: model:ir.model.fields,field_description:infodb_academia.field_course_model_create_uid
+#: model:ir.model.fields,field_description:infodb_academia.field_session_model_create_uid
+#: model:ir.model.fields,field_description:infodb_academia.field_subscribe_wizard_create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: infodb_academia
+#: model:ir.model.fields,field_description:infodb_academia.field_course_model_create_date
+#: model:ir.model.fields,field_description:infodb_academia.field_session_model_create_date
+#: model:ir.model.fields,field_description:infodb_academia.field_subscribe_wizard_create_date
+msgid "Created on"
+msgstr "Creado en"
+
+#. module: infodb_academia
+#: model:ir.model.fields,field_description:infodb_academia.field_session_model_datetime_test
+msgid "Datetime Test"
+msgstr "Fecha y Hora"
+
+#. module: infodb_academia
+#: model:ir.ui.view,arch_db:infodb_academia.session_kanban_view
+msgid "Delete"
+msgstr "Suprimir"
+
+#. module: infodb_academia
+#: model:ir.model.fields,field_description:infodb_academia.field_course_model_description
+#: model:ir.ui.view,arch_db:infodb_academia.course_form_view
+msgid "Description"
+msgstr "Descripción"
+
+#. module: infodb_academia
+#: model:ir.model.fields,field_description:infodb_academia.field_course_model_display_name
+#: model:ir.model.fields,field_description:infodb_academia.field_session_model_display_name
+#: model:ir.model.fields,field_description:infodb_academia.field_subscribe_wizard_display_name
+msgid "Display Name"
+msgstr "Nombre mostrado"
+
+#. module: infodb_academia
+#: model:ir.model.fields,field_description:infodb_academia.field_session_model_duration
+msgid "Duration"
+msgstr "Duración"
+
+#. module: infodb_academia
+#: model:ir.model.fields,field_description:infodb_academia.field_session_model_hours
+msgid "Duration in Hours"
+msgstr "Duración en horas"
+
+#. module: infodb_academia
+#: model:ir.model.fields,help:infodb_academia.field_session_model_duration
+msgid "Duration in days"
+msgstr "Duración en días"
+
+#. module: infodb_academia
+#: model:ir.model.fields,field_description:infodb_academia.field_session_model_end_date
+msgid "End Date"
+msgstr "Fecha de finalización"
+
+#. module: infodb_academia
+#: model:ir.ui.view,arch_db:infodb_academia.report_session_view
+msgid "From"
+msgstr "Desde"
+
+#. module: infodb_academia
+#: model:ir.ui.view,arch_db:infodb_academia.course_search_view
+msgid "Group By"
+msgstr "Agrupar por"
+
+#. module: infodb_academia
+#: model:ir.model.fields,field_description:infodb_academia.field_course_model_id
+#: model:ir.model.fields,field_description:infodb_academia.field_session_model_id
+#: model:ir.model.fields,field_description:infodb_academia.field_subscribe_wizard_id
+msgid "ID"
+msgstr "ID (identificación)"
+
+#. module: infodb_academia
+#: code:addons/infodb_academia/models/session_model.py:102
+#, python-format
+msgid "Incorrect seats Value"
+msgstr "Valor de asientos incorrecto"
+
+#. module: infodb_academia
+#: model:ir.ui.menu,name:infodb_academia.academy_menu_root
+msgid "Informa DB Academy"
+msgstr "Academia Informa D&B"
+
+#. module: infodb_academia
+#: model:ir.model.fields,field_description:infodb_academia.field_res_partner_instructor
+#: model:ir.model.fields,field_description:infodb_academia.field_res_users_instructor
+#: model:ir.model.fields,field_description:infodb_academia.field_session_model_instructor_id
+msgid "Instructor"
+msgstr "Instructor"
+
+#. module: infodb_academia
+#: model:ir.model.fields,field_description:infodb_academia.field_course_model___last_update
+#: model:ir.model.fields,field_description:infodb_academia.field_session_model___last_update
+#: model:ir.model.fields,field_description:infodb_academia.field_subscribe_wizard___last_update
+msgid "Last Modified on"
+msgstr "Última modificación en"
+
+#. module: infodb_academia
+#: model:ir.model.fields,field_description:infodb_academia.field_course_model_write_uid
+#: model:ir.model.fields,field_description:infodb_academia.field_session_model_write_uid
+#: model:ir.model.fields,field_description:infodb_academia.field_subscribe_wizard_write_uid
+msgid "Last Updated by"
+msgstr "Última actualización de"
+
+#. module: infodb_academia
+#: model:ir.model.fields,field_description:infodb_academia.field_course_model_write_date
+#: model:ir.model.fields,field_description:infodb_academia.field_session_model_write_date
+#: model:ir.model.fields,field_description:infodb_academia.field_subscribe_wizard_write_date
+msgid "Last Updated on"
+msgstr "Última actualización en"
+
+#. module: infodb_academia
+#: model:ir.ui.view,arch_db:infodb_academia.course_search_view
+msgid "MY Courses"
+msgstr "Mis Cursos"
+
+#. module: infodb_academia
+#: model:ir.model.fields,field_description:infodb_academia.field_session_model_name
+msgid "Name"
+msgstr "Nombre"
+
+#. module: infodb_academia
+#: model:ir.ui.view,arch_db:infodb_academia.course_search_view
+msgid "Name Search"
+msgstr "Nombre"
+
+#. module: infodb_academia
+#: model:ir.ui.view,arch_db:infodb_academia.course_list_view
+msgid "Name Tree"
+msgstr "Nombre"
+
+#. module: infodb_academia
+#: model:ir.model.fields,field_description:infodb_academia.field_session_model_seats
+msgid "Number of seats"
+msgstr "Nº Asientos"
+
+#. module: infodb_academia
+#: model:ir.ui.view,arch_db:infodb_academia.session_graph_view
+msgid "Participating by Courses"
+msgstr "Participantes por curso"
+
+#. module: infodb_academia
+#: model:ir.ui.view,arch_db:infodb_academia.report_session_view
+msgid "Printed User"
+msgstr "Usuario impreso"
+
+#. module: infodb_academia
+#: model:ir.model.fields,field_description:infodb_academia.field_course_model_responsible_id
+#: model:ir.ui.view,arch_db:infodb_academia.course_search_view
+msgid "Responsible"
+msgstr "Responsable"
+
+#. module: infodb_academia
+#: model:ir.actions.act_window,name:infodb_academia.session_list_action
+#: model:ir.model.fields,field_description:infodb_academia.field_course_model_session_ids
+#: model:ir.model.fields,field_description:infodb_academia.field_subscribe_wizard_session_ids
+#: model:ir.ui.menu,name:infodb_academia.menu_3
+msgid "Session"
+msgstr "Sesión"
+
+#. module: infodb_academia
+#: model:ir.ui.view,arch_db:infodb_academia.session_tree_view
+msgid "Session  Tree"
+msgstr "Sesión"
+
+#. module: infodb_academia
+#: model:ir.ui.view,arch_db:infodb_academia.session_calendar_view
+msgid "Session Calendar"
+msgstr "Sesión"
+
+#. module: infodb_academia
+#: model:ir.actions.act_window,name:infodb_academia.open_board_session
+#: model:ir.ui.menu,name:infodb_academia.menu_board_session
+#: model:ir.ui.view,arch_db:infodb_academia.board_session_form
+msgid "Session Dashboard"
+msgstr "Sesión"
+
+#. module: infodb_academia
+#: model:ir.ui.view,arch_db:infodb_academia.session_form_view
+msgid "Session Form"
+msgstr "Sesión"
+
+#. module: infodb_academia
+#: model:ir.ui.view,arch_db:infodb_academia.session_gantt_view
+msgid "Session Gantt"
+msgstr "Sesión"
+
+#. module: infodb_academia
+#: model:ir.actions.report,name:infodb_academia.report_session
+msgid "Session Report"
+msgstr "Sesión"
+
+#. module: infodb_academia
+#: model:ir.ui.view,arch_db:infodb_academia.session_search_view
+msgid "Session Search"
+msgstr "Sesión"
+
+#. module: infodb_academia
+#: model:ir.ui.view,arch_db:infodb_academia.session_kanban_view
+msgid "Session name:"
+msgstr "Nombre"
+
+#. module: infodb_academia
+#: model:ir.actions.act_window,name:infodb_academia.act_session_calendar
+#: model:ir.ui.view,arch_db:infodb_academia.board_session_form
+#: model:ir.ui.view,arch_db:infodb_academia.partner_instructor_form_view
+msgid "Sessions"
+msgstr "Sesiones"
+
+#. module: infodb_academia
+#: model:ir.model.fields,field_description:infodb_academia.field_session_model_start_date
+msgid "Start Date"
+msgstr "Fecha de Inicio"
+
+#. module: infodb_academia
+#: model:ir.ui.view,arch_db:infodb_academia.wizard_form_view
+msgid "Subscribe"
+msgstr "Suscribir"
+
+#. module: infodb_academia
+#: model:ir.model.fields,field_description:infodb_academia.field_session_model_taken_seats
+msgid "Taken Seats"
+msgstr "Asientos ocupados"
+
+#. module: infodb_academia
+#: code:addons/infodb_academia/models/session_model.py:111
+#, python-format
+msgid "To many attendees"
+msgstr "Asistentes"
+
+#. module: infodb_academia
+#: model:ir.ui.view,arch_db:infodb_academia.report_session_view
+msgid "Variable"
+msgstr "Variable"
+
+#. module: infodb_academia
+#: model:ir.model,name:infodb_academia.model_course_model
+msgid "course.model"
+msgstr "Curso"
+
+#. module: infodb_academia
+#: model:ir.ui.view,arch_db:infodb_academia.partner_instructor_form_view
+msgid "myRef"
+msgstr "Referencia"
+
+#. module: infodb_academia
+#: model:ir.ui.view,arch_db:infodb_academia.wizard_form_view
+msgid "or"
+msgstr "o"
+
+#. module: infodb_academia
+#: model:ir.model,name:infodb_academia.model_session_model
+msgid "session.model"
+msgstr "Sesión"
+
+#. module: infodb_academia
+#: model:ir.model,name:infodb_academia.model_subscribe_wizard
+msgid "subscribe.wizard"
+msgstr "Sucribir"
+
+#. module: infodb_academia
+#: model:ir.ui.view,arch_db:infodb_academia.report_session_view
+msgid "to"
+msgstr "a"
