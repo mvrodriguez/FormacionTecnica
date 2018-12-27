@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<odoo>
+    <data>
+        <template id="assets_backend"
+                  name="infodb_academia_web_styles"
+                  inherit_id="web.assets_backend">
+            <xpath expr="." position="inside">
+                <link rel="stylesheet"
+                      href="/infodb_academia/static/src/css/infodb_web_styles.less"/>
+            </xpath>
+        </template>
+    </data>
+</odoo>
