@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+course_manager,course_manager,model_course_model,academy_group_manager,1,1,1,1
+session_manager,session_manager,model_session_model,academy_group_manager,1,1,1,1
+course_read_all,course_all,model_course_model,,1,0,0,0
+session_read_all,session_all,model_session_model,,1,0,0,0
