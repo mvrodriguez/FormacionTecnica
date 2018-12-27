@@ -29,18 +29,12 @@
         'views/res_partner_view.xml',
         'views/session_model_view.xml',
         'security/groups.xml',
-        'security/ir.model.access.csv'
-#        'security/security.xml',
-#        'views/views.xml',
-#        'views/templates.xml',
-#        'views/partner.xml',
-#        'views/session.xml',
-#        'views/wizard.xml',
-#        'security/ir.model.access.csv',
-#        'reports/reports.xml',
-#        'views/session_board.xml',
+        'security/ir.model.access.csv',
+        'views/session_board.xml',
+        'wizard/subscribe_wizard_view.xml',
+        'report/report.xml'
     ],
-    # Sólo se cargaran en modo demo
+    # Sólo se cargarán en modo demo
     'demo': [
         'demo/data.xml',
     ],

@@ -4,6 +4,7 @@ from psycopg2 import IntegrityError
 from odoo.tests import common
 from odoo.tools import mute_logger  # comentario en línea
 
+
 class GlobalTestSession(common.TransactionCase):
     # Global test for academy module,
     # Test session
@@ -21,7 +22,8 @@ class GlobalTestSession(common.TransactionCase):
 
     # Create session function
     def create_session(self, session_name, session_seats,
-        session_instructor_id, session_attendee_ids, session_course_id):
+                       session_instructor_id, session_attendee_ids,
+                       session_course_id):
         session_id = self.session.create({
             'name': session_name,
             'seats': session_seats,
@@ -33,8 +35,8 @@ class GlobalTestSession(common.TransactionCase):
 
     # Test methods
     # Mute SQL error
-    #@mute_logger('odoo.sql_db')
-    #def test_04_instructor_is_attendee(self):
+    # @mute_logger('odoo.sql_db')
+    # def test_04_instructor_is_attendee(self):
     #    test_04_instructor_is_attendee_correct = False
     #    try:
     #        partner_vauxoo = self.env.ref('base.res_partner_2')
@@ -56,23 +58,29 @@ class GlobalTestSession(common.TransactionCase):
     #
     #    self.assertTrue(test_04_instructor_is_attendee_correct)
     # Mute SQL error
+
     @mute_logger('odoo.sql_db')
     def test_20_session_without_course(self):
         # Test: Create a session without course
         # Python constraint for session without course
 
-        with self.assertRaisesRegexp(IntegrityError, 'null value in column "course_id"'
-            ' violates not-null constraint'):
-
-            self.create_session('Session Test Name', 2, self.partner.id,
-            [(6,0,[self.partner.id])], None)
+        with self.assertRaisesRegexp(IntegrityError,
+                                     'null value in column '
+                                     '"course_id"'
+                                     ' violates not-null constraint'):
+            self.create_session('Session Test Name', 2,
+                                self.partner.id,
+                                [(6, 0, [self.partner.id])], None)
 
     # Mute SQL error
     @mute_logger('odoo.sql_db')
     def test_30_create_valid_session(self):
         # Test: Create a session with valid parameters
 
-        session = self.create_session('Session Test Name', 2, self.partner.id,
-        [(6,0,[self.attendee.id])], self.course.id)
+        session = self.create_session('Session Test Name', 2,
+                                      self.partner.id,
+                                      [(6, 0, [self.attendee.id])],
+                                      self.course.id)
 
-        self.assertTrue(self.session.search([('id','=', "{}".format(session.id))]).id)
+        self.assertTrue(self.session.search(
+            [('id', '=', "{}".format(session.id))]).id)
