@@ -1,0 +1,97 @@
+▪ Tipos de campos
+
+    • Boolean -> Booleano
+    • Datetime -> Fecha y Hora
+    • Integer -> Entero
+    • Binary -> Binario (base64)
+    • Float -> Decimal
+    • Selection -> Selección
+    • Monetary -> Importes. Automáticamente pone el símbolo de moneda al
+              lado.
+    • Reference -> Referencia. Relaciona modelo + Id. Formato y ejemplo:
+             Origen: mod.factura,factura2
+    • Char -> Campo texto limitado
+    • Many2one -> Relacional N-1
+    • Text -> Campo texto ilimitado
+    • One2many -> Relacional 1-N
+    • Html -> Proporciona visor html
+    • Many2many -> Relacional N-N
+    • Date -> Fecha
+
+▪ Atributos campos:
+
+    • String -> Etiqueta campos
+    • Default -> Setea el valor por defecto de un campo de valores estático.
+           Por ejemplo de un listado limitado.
+    • Size -> Sólo para los campos tipo char. Máximo tamaño permitido
+    • Translate -> Solo a campos tipo texto (char, text y html) permite que
+                   su contenido sea traducido.
+    • readonly=True -> Permite que un campo sea sólo lectura.
+    • required=True -> Permite que un campo sea obligatorio
+    • index=True -> Añade índice a la base de datos en ese campo.
+    • copy=False -> Este campo será ignorado cuando se duplique un registro
+              o cuando se haga una llamada a la función copy del ORM
+    • Groups -> Permite limitar el acceso o la visibilidad a un campo states
+          Este atributo espera un diccionario de valores de mapeo para
+          que los atributos de readonly y required dependan de
+          los valores del campo estado.
+
+▪ Campos / Atributos especiales / Palabras reservadas:
+
+    • Id
+        ◦ Identificador generado de manera automática para cada registro
+          en base de datos
+
+    • Campos calculados - OJO
+        ◦ Atributo compute. Cualquier campo se puede precalcular antes
+         de mostrarse o en cualquier momento que nosotros definamos.
+
+    • Campos relacionados - OJO
+        ◦ Atributo related. En un modelo b relacionado con el modelo a
+         (m2o) podemos mostrar el valor de cualquiera de los campos
+         del modelo a. (campo_relacional.campo)
+
+    • Campos property
+        ◦ En un funcionamiento multicompañía, en cualquier campo
+        podemos establecer que se guarde un valor distinto en función
+        de la compañía activa. Bastante útil, por ejemplo, a nivel
+        contable cuando cada compañía tiene su plan contable y
+        necesitamos mostrar a cada una su cuenta cliente
+        correspondiente.
+
+    • Store (True/False) - OJO
+        ◦ Guardar en base de datos o no guardarlo
+
+    • comodel_name
+        ◦ Campos many2many. Tabla relacionada
+
+    • Relation
+        ◦ Campos many2many. Define nombre tabla intermedia. Bastante
+        útil para evitar duplicados en modelos donde necesitamos dos
+        m2m entre las mismas tablas pero con distintas funcionalidades
+
+    • create_uid, create_date, write_uid, write_date
+        ◦ A menos de que se utilice el atributo _log_access=False
+        cuando se declara un modelo estos cuatro campos se crean para
+        todas las tablas automáticamente y guardan la información de
+        ID de usuario creador de registro, fecha de creación de
+        registro, ID de usuario última modificación registro, fecha
+        última modificación de registro.
+
+    • Name
+        ◦ Palabra reservada. Usada por defecto para mostrar el nombre
+        de los modelos.
+
+    • Active
+        ◦ Palabra reservada de tipo booleano que permite desactivar y
+        activar registros. Los registros que tengan esta variable
+        marcada a Falso automáticamente se excluyen de las consultas.
+
+    • Sequence
+        ◦ Se visualiza en los listados y permite mover registros
+        manualmente, re-ordenarlos, etc.
+
+    • State
+        ◦ Representa los distintos estados por los que puede pasar un
+        registro. Su ciclo de vida.
+        Por ejemplo: Borrador → Confirmado → Finalizado

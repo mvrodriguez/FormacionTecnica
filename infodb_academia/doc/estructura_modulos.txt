@@ -1,0 +1,62 @@
+Estructura módulos
+
+    • controllers
+        ◦ Ficheros para el manejo de las llamadas http
+    • data
+        ◦ Ficheros que incluyen datos que queremos crear automáticamente al instalar el módulo. Formatos xml, csv
+        ◦ Por ejemplo: plantillas de email, tipos de pago, plazos de pago, etc
+    • demo
+        ◦ Ficheros para cargar datos de demostración al instalar el módulo.
+    • doc
+        ◦ Cualquier tipo de documentación en cualquier formato de la que queramos dejar constancia en el módulo.
+        ◦ Por ejemplo el análisis de los requisitos de un módulo.
+    • i18n
+        ◦ Traducciones
+            ▪ es.po
+            ▪ fr.po
+            ▪ etc
+    • models
+        ◦ Clases (modelos) python guardados en base de datos (persistentes).
+        ◦ nombre.py
+        ◦ nombre.pyc → Compilados generados automáticamente al lanzar Odoo
+    • report
+        ◦ informes
+            ▪ .py
+            ▪ .xml
+            ▪ .docx
+            ▪ .odt
+            ▪ etc
+    • security
+        ◦ seguridad
+            ▪ grupos
+            ▪ reglas de acceso
+            ▪ reglas de registros
+    • static
+        ◦ src
+            ▪ css
+            ▪ img
+            ▪ js
+            ▪ less
+            ▪ xml
+            ▪ etc
+        ◦ description
+        ◦ tools
+        ◦ img
+        ◦ etc
+    • test
+        ◦ Test automáticos de código python
+    • views
+        ◦ Vistas de cada una de las pantallas en formato XML. Definición de menús. Acciones de Ventana, etc.
+            ▪ nombre_view.xml
+    • wizard
+        ◦ Asistentes.
+            ▪ Modelos python que no se guardan en base de datos (no persistentes).
+            ▪ nombre.py
+            ▪ nombre_view.xml
+    • README.md
+        ◦ Descripción del módulo, dependencias, características especiales
+    • __init__.py
+        ◦ Listado de archivos .py a ejecutar del mismo directorio
+        ◦ Listado de directorios que contienen ficheros .py
+    • __manifest__.py
+        ◦ Descripción del módulo, nombre, autor, fecha, versión, ficheros a incluir, imágenes descriptivas o de ejemplo, etc.
