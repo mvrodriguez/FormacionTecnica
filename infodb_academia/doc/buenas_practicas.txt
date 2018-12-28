@@ -1,0 +1,16 @@
+Buenas prácticas
+
+    • pep8 → Guía de estilo python→ Anexo pep8es.pdf
+    • Programar tests para cada una de las funciones incluidas.
+    • Generar las traducciones para todos los módulos y siempre al final de la programación
+    • Comentarios de código
+    • Descripción breve de clases y funciones
+    • Un archivo por cada modelo
+    • imports relativos
+    • Nomenclatura clases CamelCase
+    • Funciones en minúscula con separación de _
+    • No sobreescribir métodos completos
+    • Herencia de modelos con inteligencia
+    • Siempre que sea posible generar módulo genérico para todas las funciones genéricas.
+    • Módulo por funcionalidad o tema
+    • Reutilizar código siempre que sea posible

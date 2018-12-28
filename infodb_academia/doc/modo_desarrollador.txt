@@ -1,0 +1,12 @@
+Modo Desarrollador
+
+Odoo dispone de un modo desarrollador también llamado modo debug. Cuando lo activamos tendremos disponibles las siguientes opciones:
+    • Más opciones en el menú de configuración
+    • Activación de Open Developer Tools → menú pensado esencialmente para los desarrolladores donde tenemos opciones para:
+            ▪ Ver los campos de las tablas de Odoo
+            ▪ Acceso al código de formularios y vistas
+            ▪ Edición de workflows
+            ▪ Editores de acciones, etc..
+Para activarlo tenemos dos opciones:
+    1. Pulsando el menú de configuración podremos ver  la opción ‘Activar modo desarrollador’
+    2. Añadiendo ?debug a la dirección de la web justo después de web →  /web?debug
