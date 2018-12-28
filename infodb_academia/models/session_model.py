@@ -165,8 +165,7 @@ class SessionModel(models.Model):
 
         # Example super() call
         result = super(SessionModel,self).create(vals)
-        import ipdb;
-        ipdb.set_trace()
+
         #condition example
         if 'instructor_id' in vals:
             instr = vals['instructor_id']
