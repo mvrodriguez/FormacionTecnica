@@ -70,6 +70,17 @@
                 </graph>
             </field>
         </record>
+        <record model="ir.ui.view" id="session_pivot_view">
+            <field name="name">session.pivot</field>
+            <field name="model">session.model</field>
+            <field name="arch" type="xml">
+                <pivot string="Participating by Courses"
+                       disable_linking="True">
+                    <field name="course_id" type="row"/>
+                    <field name="attendee_count" type="measure"/>
+                </pivot>
+            </field>
+        </record>
         <record model="ir.ui.view" id="session_calendar_view">
             <field name="name">session.calendar</field>
             <field name="model">session.model</field>
@@ -79,7 +90,7 @@
                 </calendar>
             </field>
         </record>
-        <record model="ir.ui.view" id="session_kanban_view">
+       <!-- <record model="ir.ui.view" id="session_kanban_view">
             <field name="name">session.kanban</field>
             <field name="model">session.model</field>
             <field name="arch" type="xml">
@@ -92,7 +103,7 @@
                                                   oe_kanban_global_click_edit oe_semantic_html_override
                                                   oe_kanban_card {{record.group_fancy==1 ? 'oe_kanban_card_fancy' : ''}}">
                                 <div class="oe_dropdown_kanban">
-                                    <!-- dropdown menu -->
+
                                     <div class="oe_dropdown_toggle">
                                         <i class="fa fa-bars fa-lg"/>
                                         <ul class="oe_dropdown_menu">
@@ -108,7 +119,7 @@
                                     <div class="oe_clear"></div>
                                 </div>
                                 <div t-attf-class="oe_kanban_content">
-                                    <!-- title -->
+
                                     Session name:
                                     <field name="name"/>
                                     <br/>
@@ -123,20 +134,20 @@
                     </templates>
                 </kanban>
             </field>
-        </record>
-        <record model="ir.ui.view" id="session_gantt_view">
+        </record>-->
+        <!--<record model="ir.ui.view" id="session_gantt_view">
             <field name="name">session.gantt</field>
             <field name="model">session.model</field>
             <field name="arch" type="xml">
                 <gantt string="Session Gantt" date_start="start_date" default_group_by='instructor_id' date_stop="end_date">
                 </gantt>
             </field>
-       </record>
+       </record>-->
         <record model="ir.actions.act_window" id="infodb_academia.session_list_action">
               <field name="name">Session</field>
               <field name="res_model">session.model</field>
               <field name="view_type">form</field>
-              <field name="view_mode">tree,form,calendar,gantt,graph,kanban</field>
+              <field name="view_mode">tree,form,calendar,graph,pivot</field>
               <field name="help" type="html">
                     <p class="oe_view_nocontent_create">Create session</p>
               </field>

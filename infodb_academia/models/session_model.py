@@ -166,7 +166,7 @@ class SessionModel(models.Model):
               "record")
 
         # Example super() call
-        result = super(SessionModel,self).create(vals)
+        result = super().create(vals)
 
         #condition example
         if 'instructor_id' in vals:
