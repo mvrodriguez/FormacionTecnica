@@ -34,16 +34,25 @@ class SessionModel(models.Model):
     @api.depends('duration')
     def _get_hours(self):
         """
+        Changing the duration field in days fills de duration in
+        hours.
 
-        :return:
+            * ``filtered`` function: Select the records in ``self``
+            such that ``func(rec)`` is true, and return them as a
+            recordset.
+
+        :return: a float field
+
         """
         for record in self.filtered('duration'):
             record.hours = record.duration * 24
 
     def _set_hours(self):
         """
+        Changing the duration field in hours fills de duration in
+        days.
 
-        :return:
+        :return: a float field
         """
         for session_time in self.filtered('duration'):
             session_time.duration = session_time.hours / 24
@@ -51,7 +60,10 @@ class SessionModel(models.Model):
     @api.depends('attendee_ids')
     def _get_attendee_count(self):
         """
+        Computed field that calculate the total number of
+        attendees.
 
+        :return: a integer field
         """
         self.attendee_count = len(self.attendee_ids)
 
@@ -124,3 +136,47 @@ class SessionModel(models.Model):
             if record.instructor_id in record.attendee_ids:
                 raise exceptions.ValidationError(
                     "Asession instructor cant be an attendee")
+
+    @api.multi
+    def write(self, vals):
+        """
+
+        :param vals: {'field': value}
+                ~ For example: {'seats': 51}
+
+        :return: a boolean value.
+        """
+        if not self:
+            return True
+        print("Enter the write function every time you edit and "
+              "save a record.")
+
+        return True
+
+    @api.model
+    def create(self, vals):
+        """
+
+        :param vals:
+        :return:
+        """
+        print("Enter the create function every time you create a new"
+              "record")
+
+        # Example super() call
+        result = super(SessionModel,self).create(vals)
+        import ipdb;
+        ipdb.set_trace()
+        #condition example
+        if 'instructor_id' in vals:
+            instr = vals['instructor_id']
+
+            #instance example
+            instructor = self.env['res.partner'].browse(instr)
+
+            if instructor.parent_id and instructor.parent_id.name:
+                print("Company name ---> ", instructor.parent_id.name)
+
+        return result
+
+
