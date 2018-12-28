@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 11.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-27 15:59+0000\n"
-"PO-Revision-Date: 2018-12-27 17:07+0100\n"
+"POT-Creation-Date: 2018-12-28 09:53+0000\n"
+"PO-Revision-Date: 2018-12-28 10:54+0100\n"
 "Last-Translator: <>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -151,7 +151,7 @@ msgstr "Curso"
 #: model:ir.ui.menu,name:infodb_academia.menu_2
 #: model:ir.ui.view,arch_db:infodb_academia.board_session_form
 msgid "Courses"
-msgstr "Courses"
+msgstr "Cursos"
 
 #. module: infodb_academia
 #: model:ir.actions.act_window,help:infodb_academia.session_list_action
@@ -238,7 +238,7 @@ msgid "ID"
 msgstr "ID (identificación)"
 
 #. module: infodb_academia
-#: code:addons/infodb_academia/models/session_model.py:102
+#: code:addons/infodb_academia/models/session_model.py:114
 #, python-format
 msgid "Incorrect seats Value"
 msgstr "Valor de asientos incorrecto"
@@ -390,7 +390,7 @@ msgid "Taken Seats"
 msgstr "Asientos ocupados"
 
 #. module: infodb_academia
-#: code:addons/infodb_academia/models/session_model.py:111
+#: code:addons/infodb_academia/models/session_model.py:123
 #, python-format
 msgid "To many attendees"
 msgstr "Asistentes"
@@ -423,7 +423,7 @@ msgstr "Sesión"
 #. module: infodb_academia
 #: model:ir.model,name:infodb_academia.model_subscribe_wizard
 msgid "subscribe.wizard"
-msgstr "Sucribir"
+msgstr "Suscribir"
 
 #. module: infodb_academia
 #: model:ir.ui.view,arch_db:infodb_academia.report_session_view

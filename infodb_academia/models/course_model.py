@@ -17,4 +17,9 @@ class CourseModel(models.Model):
                                      Index=True,
                                      ondelete="set null",
                                      default=default_responsible)
-    session_ids = fields.One2many('session.model', 'course_id')
+    session_ids = fields.One2many('session.model', 'course_id'),
+    # empresa formadora
+    # lugar de impartición - utilizar generic
+    # campo selection de modo: online - presencial
+    # campo estado selection: Nuevo - inscripción abierta -
+    # en proceso: inscripción cerrada - Cerrado - Cancelado
